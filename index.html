@@ -108,14 +108,15 @@
     <!-- Hero Section -->
     <section class="relative bg-stone-900/60 border-b border-stone-800/80 overflow-hidden py-12 lg:py-16">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-            <span class="text-amber-400 font-semibold text-xs tracking-widest uppercase bg-amber-500/10 px-4 py-1.5 rounded-full border border-amber-500/20 inline-block mb-3">
+            <span class="text-amber-400 font-semibold text-xs tracking-widest uppercase bg-amber-500/10 px-4 py-1.5 rounded-full border border-amber-500/20 inline-block mb-4">
                 McAlester, OK
             </span>
-            <h2 class="text-3xl sm:text-5xl font-serif font-bold text-stone-100 tracking-tight mb-3">
-                Authentic Vietnamese & Asian Cuisine
+            <h2 class="text-3xl sm:text-5xl lg:text-6xl font-serif font-extrabold text-stone-100 tracking-tight mb-4 flex flex-col gap-2">
+                <span class="text-amber-400 drop-shadow-md">Pho Daily</span>
+                <span class="text-xl sm:text-3xl lg:text-4xl text-stone-300 font-medium tracking-wide">Authentic Vietnamese & Asian Cuisine</span>
             </h2>
             <p class="max-w-2xl mx-auto text-stone-400 text-xs sm:text-sm leading-relaxed mb-6">
-                Steaming bowls of traditional Pho, stir-fried Xaomi noodles, sizzled hot plate skillets, curries, pad thai, milk teas, and specialty Asian dishes.
+                Bowls of traditional Pho, stir-fried Xaomi noodles, sizzled hot plate skillets, curries, pad thai, milk teas, and specialty Asian dishes.
             </p>
 
             <div class="flex flex-wrap items-center justify-center gap-3">
@@ -144,7 +145,7 @@
                     <input 
                         type="text" 
                         id="searchInput" 
-                        placeholder="Search dishes (e.g. Orange Chicken, Pho, F14, Boba)..." 
+                        placeholder="Search dishes (e.g. Sapporo, Boba, Pho, F14)..." 
                         class="w-full pl-11 pr-10 py-3 bg-stone-950 border border-stone-800 rounded-xl text-stone-100 placeholder-stone-500 text-sm focus:outline-none focus:border-amber-500 focus:ring-1 focus:ring-amber-500 transition-all"
                     >
                     <button id="clearSearch" class="hidden absolute right-3 top-1/2 -translate-y-1/2 text-stone-400 hover:text-stone-200 p-1">
@@ -421,7 +422,7 @@
                     { id: "F11", name: "Fried Calamari", price: "$9.88", desc: "Wok-tossed With Jalapenos And Chef's Signature Spices", category: "appetizers", spicy: 1 },
                     { id: "F12", name: "Fried Crazy Jalapinos", price: "$9.88", desc: "Tuna Jalapinos With Chef Special", category: "appetizers", spicy: 1 },
                     { id: "F13", name: "Steamed Char Siu Bao (2)", price: "$5.88", desc: "Char Siu Pork Cores Steamed Buns", category: "appetizers" },
-                    { id: "F14", name: "Fried Char Siu Bao (2)", price: "$5.88", desc: "Char Siu Pork Cores Fried Buns", category: "appetizers" },
+                    { id: "F14", name: "Fried Char Siu Bao (3)", price: "$5.88", desc: "Char Sin Pork Cores", category: "appetizers" },
                     { id: "F15", name: "Fried Chicken Wings", price: "$8.88", desc: "Deep-fry Butter Mix W. Spicy Sauce", category: "appetizers", spicy: 1 },
                     { id: "F16", name: "Papaya Salad", price: "$8.88", desc: "Shredded Unripe Papaya Mix W. Chef Special Sauce", category: "appetizers" },
                     { id: "F17", name: "Papaya Shrimp Salad", price: "$10.88", desc: "Papaya & Shrimp Mix W. Special Sauce", category: "appetizers" }
@@ -496,6 +497,33 @@
                 ]
             },
             {
+                id: "friedrice",
+                title: "Fried Rice",
+                subtitle: "Contains peas, carrots, onions, eggs, and soy sauce",
+                items: [
+                    { id: "F50", name: "Traditional Fried Rice", price: "From $11.88", desc: "Beef ($13.88) | Chicken ($12.88) | Shrimp ($13.88) | Seafood ($14.88) | Combination ($16.88) | Tofu ($12.88) | Veggie ($11.88)", category: "friedrice" },
+                    { id: "F51", name: "Basil Fried Rice", price: "From $11.88", desc: "Beef ($13.88) | Chicken ($12.88) | Shrimp ($13.88) | Seafood ($14.88) | Combination ($16.88) | Tofu ($12.88) | Veggie ($11.88)", category: "friedrice" },
+                    { id: "F52", name: "Pineapple Fried Rice", price: "From $12.88", desc: "Beef ($14.88) | Chicken ($13.88) | Shrimp ($14.88) | Seafood ($15.88) | Combination ($17.88) | Tofu ($13.88) | Veggie ($12.88)", category: "friedrice" }
+                ]
+            },
+            {
+                id: "chefspecials",
+                title: "Chef's Specials",
+                subtitle: "Served with Steamed Rice & Choice of Crab Rangoon or Spring Roll",
+                items: [
+                    { id: "F53", name: "Orange Chicken", price: "$13.88", desc: "Crispy Chicken Wok-Tossed In Sweet & Orange Sauce", category: "chefspecials" },
+                    { id: "F54", name: "Sweet & Sour Chicken", price: "$13.88", desc: "Crispy Chicken Wok-Tossed In Tangy Sauce", category: "chefspecials" },
+                    { id: "F55", name: "Sesame Chicken", price: "$13.88", desc: "Crispy Chicken Wok-Tossed In Sesame Sauce", category: "chefspecials" },
+                    { id: "F56", name: "Chicken & Broccoli", price: "$13.88", desc: "Chinese Style Stir-Fry With Signature Brown Sauce", category: "chefspecials" },
+                    { id: "F57", name: "Beef & Broccoli", price: "$14.88", desc: "Tender Beef Stir-Fried With Fresh Broccoli", category: "chefspecials" },
+                    { id: "F58", name: "Jalapeno Chicken", price: "$13.88", desc: "Crispy Chicken Wok-Tossed In Sweet & Spicy Sauce", category: "chefspecials", spicy: 3 },
+                    { id: "F59", name: "General Chicken", price: "$13.88", desc: "Crispy Chicken Wok-Tossed In Signature Sauce", category: "chefspecials", spicy: 2 },
+                    { id: "F60", name: "Kung Pao Chicken", price: "$13.88", desc: "Szechwan-Inspired Sauce With Chicken, Peanuts & Vegetables", category: "chefspecials", spicy: 2 },
+                    { id: "F61", name: "Cashew Chicken", price: "$13.88", desc: "Marinated Chicken Wok-Tossed With Cashew & Signature Sauce", category: "chefspecials" },
+                    { id: "F62", name: "Black Pepper Chicken", price: "$13.88", desc: "Marinated Chicken, Vegetables, & Signature Sauce", category: "chefspecials" }
+                ]
+            },
+            {
                 id: "curries",
                 title: "Curries",
                 subtitle: "Assorted vegetables, coconut milk, & steamed rice",
@@ -555,67 +583,69 @@
                     { id: "F87", name: "Vietnamese Pork Rice", price: "$14.88", desc: "Marinated pork & shredded pork served over steamed rice", category: "vietnamese" }
                 ]
             },
+            // SEPARATED DRINK SECTIONS PER MENU
             {
-                id: "friedrice",
-                title: "Fried Rice",
-                subtitle: "Contains peas, carrots, onions, eggs, and soy sauce",
+                id: "beer",
+                title: "Beer",
+                subtitle: "Domestic, Imported & Craft Beers",
                 items: [
-                    { id: "F50", name: "Traditional Fried Rice", price: "From $11.88", desc: "Beef ($13.88) | Chicken ($12.88) | Shrimp ($13.88) | Seafood ($14.88) | Combination ($16.88) | Tofu ($12.88) | Veggie ($11.88)", category: "friedrice" },
-                    { id: "F51", name: "Basil Fried Rice", price: "From $11.88", desc: "Beef ($13.88) | Chicken ($12.88) | Shrimp ($13.88) | Seafood ($14.88) | Combination ($16.88) | Tofu ($12.88) | Veggie ($11.88)", category: "friedrice" },
-                    { id: "F52", name: "Pineapple Fried Rice", price: "From $12.88", desc: "Beef ($14.88) | Chicken ($13.88) | Shrimp ($14.88) | Seafood ($15.88) | Combination ($17.88) | Tofu ($13.88) | Veggie ($12.88)", category: "friedrice" }
+                    { id: "D1", name: "Sapporo", price: "$4.99", desc: "Japanese Imported Beer", category: "beer" },
+                    { id: "D2", name: "Asahi", price: "$4.99", desc: "Japanese Imported Beer", category: "beer" },
+                    { id: "D3", name: "Kirin Ichiban", price: "$4.99", desc: "Japanese Imported Beer", category: "beer" },
+                    { id: "D4", name: "Bud Light", price: "$4.99", desc: "Domestic Beer", category: "beer" },
+                    { id: "D5", name: "Coors Light", price: "$4.99", desc: "Domestic Beer", category: "beer" },
+                    { id: "D6", name: "Miller Lite", price: "$4.99", desc: "Domestic Beer", category: "beer" },
+                    { id: "D7", name: "Blue Moon", price: "$4.99", desc: "Craft Beer", category: "beer" },
+                    { id: "D8", name: "Corona", price: "$4.99", desc: "Import Beer", category: "beer" },
+                    { id: "D9", name: "Modelo", price: "$4.99", desc: "Import Beer", category: "beer" }
                 ]
             },
             {
-                id: "chefspecials",
-                title: "Chef's Specials",
-                subtitle: "Served with Steamed Rice & Choice of Crab Rangoon or Spring Roll",
+                id: "wine",
+                title: "Wine",
+                subtitle: "Glass & Bottle selection",
                 items: [
-                    { id: "F53", name: "Orange Chicken", price: "$13.88", desc: "Crispy Chicken Wok-Tossed In Sweet & Orange Sauce", category: "chefspecials" },
-                    { id: "F54", name: "Sweet & Sour Chicken", price: "$13.88", desc: "Crispy Chicken Wok-Tossed In Tangy Sauce", category: "chefspecials" },
-                    { id: "F55", name: "Sesame Chicken", price: "$13.88", desc: "Crispy Chicken Wok-Tossed In Sesame Sauce", category: "chefspecials" },
-                    { id: "F56", name: "Chicken & Broccoli", price: "$13.88", desc: "Chinese Style Stir-Fry With Signature Brown Sauce", category: "chefspecials" },
-                    { id: "F57", name: "Beef & Broccoli", price: "$14.88", desc: "Tender Beef Stir-Fried With Fresh Broccoli", category: "chefspecials" },
-                    { id: "F58", name: "Jalapeno Chicken", price: "$13.88", desc: "Crispy Chicken Wok-Tossed In Sweet & Spicy Sauce", category: "chefspecials", spicy: 3 },
-                    { id: "F59", name: "General Chicken", price: "$13.88", desc: "Crispy Chicken Wok-Tossed In Signature Sauce", category: "chefspecials", spicy: 2 },
-                    { id: "F60", name: "Kung Pao Chicken", price: "$13.88", desc: "Szechwan-Inspired Sauce With Chicken, Peanuts & Vegetables", category: "chefspecials", spicy: 2 },
-                    { id: "F61", name: "Cashew Chicken", price: "$13.88", desc: "Marinated Chicken Wok-Tossed With Cashew & Signature Sauce", category: "chefspecials" },
-                    { id: "F62", name: "Black Pepper Chicken", price: "$13.88", desc: "Marinated Chicken, Vegetables, & Signature Sauce", category: "chefspecials" }
+                    { id: "D10", name: "Gekkeikan Plum Wine", price: "$8.99 Glass / $32.99 Bottle", desc: "Sweet Japanese Plum Wine", category: "wine" },
+                    { id: "D11", name: "Risata Moscato D'Asti", price: "$7.99 Glass / $27.99 Bottle", desc: "Sweet White Wine", category: "wine" },
+                    { id: "D12", name: "Josh Chardonnay", price: "$7.99 Glass / $27.99 Bottle", desc: "White Wine", category: "wine" },
+                    { id: "D13", name: "Ecco Domani Pinot Grigio", price: "$7.99 Glass / $27.99 Bottle", desc: "White Wine", category: "wine" },
+                    { id: "D14", name: "Josh Pinot Noir", price: "$7.99 Glass / $27.99 Bottle", desc: "Red Wine", category: "wine" }
                 ]
             },
             {
-                id: "drinks",
-                title: "Beverages & Milk Teas",
-                subtitle: "Refreshing drinks, Boba teas, coffees, and alcoholic beverages",
+                id: "sakesoju",
+                title: "Sake & Soju",
+                subtitle: "Traditional sake and Korean soju flavors",
                 items: [
-                    { id: "D1", name: "Sapporo", price: "$4.99", desc: "Japanese Imported Beer", category: "drinks" },
-                    { id: "D2", name: "Asahi", price: "$4.99", desc: "Japanese Imported Beer", category: "drinks" },
-                    { id: "D3", name: "Kirin Ichiban", price: "$4.99", desc: "Japanese Imported Beer", category: "drinks" },
-                    { id: "D4", name: "Bud Light", price: "$4.99", desc: "Domestic Beer", category: "drinks" },
-                    { id: "D5", name: "Coors Light", price: "$4.99", desc: "Domestic Beer", category: "drinks" },
-                    { id: "D6", name: "Miller Lite", price: "$4.99", desc: "Domestic Beer", category: "drinks" },
-                    { id: "D7", name: "Blue Moon", price: "$4.99", desc: "Craft Beer", category: "drinks" },
-                    { id: "D8", name: "Corona", price: "$4.99", desc: "Import Beer", category: "drinks" },
-                    { id: "D9", name: "Modelo", price: "$4.99", desc: "Import Beer", category: "drinks" },
-                    { id: "D10", name: "Gekkeikan Plum Wine", price: "$8.99 Glass / $32.99 Bottle", desc: "Sweet Japanese Plum Wine", category: "drinks" },
-                    { id: "D11", name: "Risata Moscato D'Asti", price: "$7.99 Glass / $27.99 Bottle", desc: "Sweet White Wine", category: "drinks" },
-                    { id: "D12", name: "Josh Chardonnay", price: "$7.99 Glass / $27.99 Bottle", desc: "White Wine", category: "drinks" },
-                    { id: "D13", name: "Ecco Domani Pinot Grigio", price: "$7.99 Glass / $27.99 Bottle", desc: "White Wine", category: "drinks" },
-                    { id: "D14", name: "Josh Pinot Noir", price: "$7.99 Glass / $27.99 Bottle", desc: "Red Wine", category: "drinks" },
-                    { id: "D15", name: "Traditional Hot Sake", price: "$7.99", desc: "Japanese Rice Wine", category: "drinks" },
-                    { id: "D16", name: "Traditional Cold Sake", price: "$7.99", desc: "Japanese Rice Wine", category: "drinks" },
-                    { id: "D17", name: "Hanjan Korean Soju", price: "$10.99", desc: "Original, Strawberry, Lychee, Grape, Blueberry, Apple, Peach, Orange, Watermelon", category: "drinks" },
-                    { id: "D18", name: "Bubble Milk Tea (Tapioca Pearls)", price: "$6.99", desc: "Add Boba +$1.20. Flavors: Original, Strawberry, Mango, Taro, Vanilla, Coconut, Green Matcha, Banana, Papaya", category: "drinks" },
-                    { id: "D19", name: "Ramune Japanese Soda", price: "$4.99", desc: "Melon, Orange, Mango, Lychee, Original, Peach, Hawaiian Blue", category: "drinks" },
-                    { id: "D20", name: "Thai Tea", price: "$4.99", desc: "Classic brewed sweet Thai iced tea", category: "drinks" },
-                    { id: "D21", name: "Vietnamese Iced Coffee", price: "$4.99", desc: "Strong slow-drip coffee with sweetened condensed milk", category: "drinks" },
-                    { id: "D22", name: "Pink Drink", price: "$4.99", desc: "Refreshing sweet pink beverage", category: "drinks" },
-                    { id: "D23", name: "Soft Drinks (Bottled)", price: "$2.99", desc: "Coke, Diet Coke, Coke Zero, Cherry Coke, Sprite, Root Beer, Pepsi, Diet Pepsi, Mountain Dew, Diet Mountain Dew, Dr Pepper, Diet Dr Pepper", category: "drinks" },
-                    { id: "D24", name: "Lipton Iced Tea", price: "$2.29 Cup", desc: "Classic iced tea", category: "drinks" },
-                    { id: "D25", name: "Lemonade", price: "$2.29 Cup", desc: "Sweet lemonade", category: "drinks" },
-                    { id: "D26", name: "Apple Juice", price: "$2.29 Cup", desc: "Apple juice", category: "drinks" },
-                    { id: "D27", name: "Hot Coffee", price: "$2.29 Cup", desc: "Fresh brewed hot coffee", category: "drinks" },
-                    { id: "D28", name: "Hot Tea", price: "$1.50 Cup", desc: "Warm green or jasmine tea", category: "drinks" },
-                    { id: "D29", name: "Bottled Water", price: "$1.99", desc: "Purified drinking water", category: "drinks" }
+                    { id: "D15", name: "Traditional Hot Sake", price: "$7.99", desc: "Japanese Rice Wine", category: "sakesoju" },
+                    { id: "D16", name: "Traditional Cold Sake", price: "$7.99", desc: "Japanese Rice Wine", category: "sakesoju" },
+                    { id: "D17", name: "Hanjan Korean Soju", price: "$10.99", desc: "Flavors: Original | Strawberry | Lychee | Grape | Blueberry | Apple | Peach | Orange | Watermelon", category: "sakesoju" }
+                ]
+            },
+            {
+                id: "specialtydrinks",
+                title: "Specialty Drinks",
+                subtitle: "Bubble teas, Ramune sodas & specialty iced beverages (Add boba +$1.20)",
+                items: [
+                    { id: "D18", name: "Bubble Milk Tea (Tapioca Pearls)", price: "$6.99", desc: "Flavors: Original Tea | Strawberry | Mango | Taro | Vanilla | Coconut | Green Matcha | Banana | Papaya", category: "specialtydrinks" },
+                    { id: "D19", name: "Ramune Japanese Soda", price: "$4.99", desc: "Flavors: Melon | Orange | Mango | Lychee | Original | Peach | Hawaiian Blue", category: "specialtydrinks" },
+                    { id: "D20", name: "Thai Tea", price: "$4.99", desc: "Classic brewed sweet Thai iced tea", category: "specialtydrinks" },
+                    { id: "D21", name: "Vietnamese Iced Coffee", price: "$4.99", desc: "Strong slow-drip coffee with sweetened condensed milk", category: "specialtydrinks" },
+                    { id: "D22", name: "Pink Drink", price: "$4.99", desc: "Refreshing sweet pink beverage", category: "specialtydrinks" }
+                ]
+            },
+            {
+                id: "nonalcoholic",
+                title: "Beverages (Non-Alcoholic)",
+                subtitle: "Soft drinks, teas, juices, and water",
+                items: [
+                    { id: "D23", name: "Soft Drinks", price: "Bottle $2.99", desc: "Coke | Diet Coke | Coke Zero | Cherry Coke | Sprite | Root Beer | Pepsi | Diet Pepsi | Mt Dew | Diet Mt Dew | Dr Pepper | Diet Dr Pepper", category: "nonalcoholic" },
+                    { id: "D24", name: "Lipton Iced Tea", price: "$2.29 Cup", desc: "Classic iced tea", category: "nonalcoholic" },
+                    { id: "D25", name: "Lemonade", price: "$2.29 Cup", desc: "Sweet lemonade", category: "nonalcoholic" },
+                    { id: "D26", name: "Apple Juice", price: "$2.29 Cup", desc: "Apple juice", category: "nonalcoholic" },
+                    { id: "D27", name: "Hot Coffee", price: "$2.29 Cup", desc: "Fresh brewed hot coffee", category: "nonalcoholic" },
+                    { id: "D28", name: "Hot Tea", price: "$1.50 Cup", desc: "Warm green or jasmine tea", category: "nonalcoholic" },
+                    { id: "D29", name: "Bottled Water", price: "$1.99", desc: "Purified drinking water", category: "nonalcoholic" }
                 ]
             }
         ];
@@ -654,7 +684,7 @@
                                     <span class="font-bold text-amber-400 text-sm whitespace-nowrap">${item.price}</span>
                                 </div>
                                 <h4 class="font-bold text-stone-100 text-base group-hover:text-amber-300 transition-colors mt-2 mb-1">${item.name}</h4>
-                                <p class="text-stone-400 text-xs line-clamp-2 leading-relaxed">${item.desc}</p>
+                                <p class="text-stone-400 text-xs line-clamp-3 leading-relaxed">${item.desc}</p>
                             </div>
                             <div class="mt-4 pt-2 flex items-center text-xs text-amber-500 font-semibold group-hover:translate-x-0.5 transition-transform">
                                 <span>View details & order ›</span>
