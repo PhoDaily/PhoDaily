@@ -93,7 +93,7 @@
                 </a>
             </div>
 
-            <!-- Mobile Action Buttons (Now includes Hours button!) -->
+            <!-- Mobile Action Buttons (Includes Hours button) -->
             <div class="flex items-center space-x-1.5 md:hidden">
                 <a href="#hours-location" title="Hours & Location" class="flex flex-col items-center justify-center w-10 h-10 bg-amber-100 border border-amber-300 text-amber-800 rounded-xl shadow-xs">
                     <i data-lucide="clock" class="w-4 h-4"></i>
@@ -111,7 +111,6 @@
 
     <!-- Hero Section with Background Image & Gradient Overlay -->
     <section class="relative bg-stone-900 text-white border-b border-stone-200 overflow-hidden py-20 lg:py-28">
-        <!-- Background Image & Overlay -->
         <div class="absolute inset-0 z-0">
             <img src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?q=80&w=1920&auto=format&fit=crop" alt="Delicious Asian Cuisine & Noodles Background" class="w-full h-full object-cover object-center opacity-40 scale-105 transform hover:scale-100 transition-transform duration-1000">
             <div class="absolute inset-0 bg-gradient-to-t from-stone-950 via-stone-950/70 to-stone-900/40"></div>
@@ -425,18 +424,18 @@
                     { id: "F1", name: "Vietnamese Fresh Spring Rolls (2)", price: "$6.88", desc: "Rice Paper Wraps With A Choice of Shrimp or Pork", category: "appetizers" },
                     { id: "F2", name: "Fried Spring Rolls (4)", price: "$6.88", desc: "Choice Of Pork Or Veggie Deep-fried Spring Rolls", category: "appetizers" },
                     { id: "F3", name: "Edamame", price: "$5.88", desc: "Boiled Soybeans Seasoned With Salts", category: "appetizers" },
-                    { id: "F4", name: "Spicy Edamame", price: "$6.88", desc: "Boiled Soybeans Wok-tossed With Signature Spices", category: "appetizers", spicy: 1 },
+                    { id: "F4", name: "Spicy Edamame", price: "$6.88", desc: "Boiled Soybeans Wok-tossed With Signature Spices", category: "appetizers", spicy: 1, spicyLabel: "🌶️ Spicy" },
                     { id: "F5", name: "Fried Gyoza (6)", price: "$6.88", desc: "Choice Of Pork Or Veggie Dumplings", category: "appetizers" },
                     { id: "F6", name: "Steamed Gyoza (6)", price: "$6.88", desc: "Pork Dumplings Served With Gyoza Sauce", category: "appetizers" },
                     { id: "F7", name: "Fried Shrimp Shumai (6)", price: "$6.88", desc: "Deep-fry Shrimp Dumplings", category: "appetizers" },
                     { id: "F8", name: "Steamed Shumai", price: "$6.88", desc: "Steamed Dumplings", category: "appetizers" },
                     { id: "F9", name: "Fried Crab Rangoons (6)", price: "$6.88", desc: "Deep-fried Cream Cheese Wontons", category: "appetizers" },
                     { id: "F10", name: "Crispy Shrimp", price: "$9.88", desc: "Deep-fry Shrimp With Butter Mix", category: "appetizers" },
-                    { id: "F11", name: "Fried Calamari", price: "$9.88", desc: "Wok-tossed With Jalapenos And Chef's Signature Spices", category: "appetizers", spicy: 1 },
-                    { id: "F12", name: "Fried Crazy Jalapinos", price: "$9.88", desc: "Tuna Jalapinos With Chef Special", category: "appetizers", spicy: 1 },
+                    { id: "F11", name: "Fried Calamari", price: "$9.88", desc: "Wok-tossed With Jalapenos And Chef's Signature Spices", category: "appetizers", spicy: 1, spicyLabel: "🌶️ Spicy" },
+                    { id: "F12", name: "Fried Crazy Jalapinos", price: "$9.88", desc: "Tuna Jalapinos With Chef Special", category: "appetizers", spicy: 1, spicyLabel: "🌶️ Spicy" },
                     { id: "F13", name: "Steamed Char Siu Bao (2)", price: "$5.88", desc: "Char Siu Pork Cores Steamed Buns", category: "appetizers" },
                     { id: "F14", name: "Fried Char Siu Bao (2)", price: "$5.88", desc: "Char Sin Pork Cores", category: "appetizers" },
-                    { id: "F15", name: "Fried Chicken Wings", price: "$8.88", desc: "Deep-fry Butter Mix W. Spicy Sauce", category: "appetizers", spicy: 1 },
+                    { id: "F15", name: "Fried Chicken Wings", price: "$8.88", desc: "Deep-fry Butter Mix W. Spicy Sauce", category: "appetizers", spicy: 1, spicyLabel: "🌶️ Spicy" },
                     { id: "F16", name: "Papaya Salad", price: "$8.88", desc: "Shredded Unripe Papaya Mix W. Chef Special Sauce", category: "appetizers" },
                     { id: "F17", name: "Papaya Shrimp Salad", price: "$10.88", desc: "Papaya & Shrimp Mix W. Special Sauce", category: "appetizers" }
                 ]
@@ -529,9 +528,9 @@
                     { id: "F55", name: "Sesame Chicken", price: "$13.88", desc: "Crispy Chicken Wok-Tossed In Sesame Sauce", category: "chefspecials" },
                     { id: "F56", name: "Chicken & Broccoli", price: "$13.88", desc: "Chinese Style Stir-Fry With Signature Brown Sauce", category: "chefspecials" },
                     { id: "F57", name: "Beef & Broccoli", price: "$14.88", desc: "Tender Beef Stir-Fried With Fresh Broccoli", category: "chefspecials" },
-                    { id: "F58", name: "Jalapeno Chicken", price: "$13.88", desc: "Crispy Chicken Wok-Tossed In Sweet & Spicy Sauce", category: "chefspecials", spicy: 3 },
-                    { id: "F59", name: "General Chicken", price: "$13.88", desc: "Crispy Chicken Wok-Tossed In Signature Sauce", category: "chefspecials", spicy: 2 },
-                    { id: "F60", name: "Kung Pao Chicken", price: "$13.88", desc: "Szechwan-Inspired Sauce With Chicken, Peanuts & Vegetables", category: "chefspecials", spicy: 2 },
+                    { id: "F58", name: "Jalapeno Chicken", price: "$13.88", desc: "Crispy Chicken Wok-Tossed In Sweet & Spicy Sauce", category: "chefspecials", spicy: 3, spicyLabel: "🌶️🌶️🌶️ Very Spicy" },
+                    { id: "F59", name: "General Chicken", price: "$13.88", desc: "Crispy Chicken Wok-Tossed In Signature Sauce", category: "chefspecials", spicy: 2, spicyLabel: "🌶️🌶️ Medium Spicy" },
+                    { id: "F60", name: "Kung Pao Chicken", price: "$13.88", desc: "Szechwan-Inspired Sauce With Chicken, Peanuts & Vegetables", category: "chefspecials", spicy: 2, spicyLabel: "🌶️🌶️ Medium Spicy" },
                     { id: "F61", name: "Cashew Chicken", price: "$13.88", desc: "Marinated Chicken Wok-Tossed With Cashew & Signature Sauce", category: "chefspecials" },
                     { id: "F62", name: "Black Pepper Chicken", price: "$13.88", desc: "Marinated Chicken, Vegetables, & Signature Sauce", category: "chefspecials" }
                 ]
@@ -541,10 +540,10 @@
                 title: "Curries",
                 subtitle: "Assorted vegetables, coconut milk, & steamed rice",
                 items: [
-                    { id: "F63", name: "Yellow Curry (Potatoes & Carrots)", price: "From $12.88", desc: "Beef ($15.88) | Chicken ($14.88) | Shrimp ($15.88) | Combination ($17.88) | Tofu ($13.88) | Veggie ($12.88)", category: "curries", spicy: 1 },
-                    { id: "F64", name: "Green Curry", price: "From $12.88", desc: "Beef ($15.88) | Chicken ($14.88) | Shrimp ($15.88) | Combination ($17.88) | Tofu ($13.88) | Veggie ($12.88)", category: "curries", spicy: 2 },
-                    { id: "F65", name: "Red Curry", price: "From $12.88", desc: "Beef ($15.88) | Chicken ($14.88) | Shrimp ($15.88) | Combination ($17.88) | Tofu ($13.88) | Veggie ($12.88)", category: "curries", spicy: 3 },
-                    { id: "F66", name: "Panang Curry", price: "From $12.88", desc: "Beef ($15.88) | Chicken ($14.88) | Shrimp ($15.88) | Combination ($17.88) | Tofu ($13.88) | Veggie ($12.88)", category: "curries", spicy: 4 }
+                    { id: "F63", name: "Yellow Curry (Potatoes & Carrots)", price: "From $12.88", desc: "Beef ($15.88) | Chicken ($14.88) | Shrimp ($15.88) | Combination ($17.88) | Tofu ($13.88) | Veggie ($12.88)", category: "curries", spicy: 1, spicyLabel: "🌶️ Mild Spicy" },
+                    { id: "F64", name: "Green Curry", price: "From $12.88", desc: "Beef ($15.88) | Chicken ($14.88) | Shrimp ($15.88) | Combination ($17.88) | Tofu ($13.88) | Veggie ($12.88)", category: "curries", spicy: 2, spicyLabel: "🌶️🌶️ Medium Spicy" },
+                    { id: "F65", name: "Red Curry", price: "From $12.88", desc: "Beef ($15.88) | Chicken ($14.88) | Shrimp ($15.88) | Combination ($17.88) | Tofu ($13.88) | Veggie ($12.88)", category: "curries", spicy: 3, spicyLabel: "🌶️🌶️🌶️ Spicy" },
+                    { id: "F66", name: "Panang Curry", price: "From $12.88", desc: "Beef ($15.88) | Chicken ($14.88) | Shrimp ($15.88) | Combination ($17.88) | Tofu ($13.88) | Veggie ($12.88)", category: "curries", spicy: 4, spicyLabel: "🌶️🌶️🌶️🌶️ Extra Spicy" }
                 ]
             },
             {
@@ -552,12 +551,12 @@
                 title: "Fry Skillet (Hot Plate)",
                 subtitle: "Served with steamed rice (Upgrade +$4.99 for fried rice or stir-fry noodles)",
                 items: [
-                    { id: "F67", name: "Stir-Fry Beef Skillet", price: "$14.88", desc: "Sizzling beef & mixed vegetables on hot plate", category: "fryskillet", spicy: 1 },
-                    { id: "F68", name: "Stir-Fry Chicken Skillet", price: "$13.88", desc: "Sizzling chicken & mixed vegetables on hot plate", category: "fryskillet", spicy: 1 },
-                    { id: "F69", name: "Stir-Fry Shrimp Skillet", price: "$14.88", desc: "Sizzling shrimp & mixed vegetables on hot plate", category: "fryskillet", spicy: 1 },
-                    { id: "F70", name: "Stir-Fry Tofu Skillet", price: "$12.88", desc: "Sizzling tofu & mixed vegetables on hot plate", category: "fryskillet", spicy: 1 },
-                    { id: "F71", name: "Stir-Fry Vegetables Skillet", price: "$12.88", desc: "Sizzling assorted fresh garden vegetables", category: "fryskillet", spicy: 1 },
-                    { id: "F72", name: "Mapo Tofu", price: "$14.88", desc: "Sichuan style spicy mapo tofu cooked with savory sauce", category: "fryskillet", spicy: 1 }
+                    { id: "F67", name: "Stir-Fry Beef Skillet", price: "$14.88", desc: "Sizzling beef & mixed vegetables on hot plate", category: "fryskillet", spicy: 1, spicyLabel: "🌶️ Spicy" },
+                    { id: "F68", name: "Stir-Fry Chicken Skillet", price: "$13.88", desc: "Sizzling chicken & mixed vegetables on hot plate", category: "fryskillet", spicy: 1, spicyLabel: "🌶️ Spicy" },
+                    { id: "F69", name: "Stir-Fry Shrimp Skillet", price: "$14.88", desc: "Sizzling shrimp & mixed vegetables on hot plate", category: "fryskillet", spicy: 1, spicyLabel: "🌶️ Spicy" },
+                    { id: "F70", name: "Stir-Fry Tofu Skillet", price: "$12.88", desc: "Sizzling tofu & mixed vegetables on hot plate", category: "fryskillet", spicy: 1, spicyLabel: "🌶️ Spicy" },
+                    { id: "F71", name: "Stir-Fry Vegetables Skillet", price: "$12.88", desc: "Sizzling assorted fresh garden vegetables", category: "fryskillet", spicy: 1, spicyLabel: "🌶️ Spicy" },
+                    { id: "F72", name: "Mapo Tofu", price: "$14.88", desc: "Sichuan style spicy mapo tofu cooked with savory sauce", category: "fryskillet", spicy: 1, spicyLabel: "🌶️ Spicy" }
                 ]
             },
             {
@@ -694,7 +693,10 @@
                             <div>
                                 <div class="flex items-start justify-between gap-3 mb-2">
                                     <span class="text-xs font-bold text-amber-800 bg-amber-100 px-2.5 py-0.5 rounded-md border border-amber-200">${item.id}</span>
-                                    <span class="font-bold text-amber-700 text-sm whitespace-nowrap">${item.price}</span>
+                                    <div class="flex items-center gap-2">
+                                        ${item.spicyLabel ? `<span class="text-[11px] font-bold text-red-600 bg-red-50 border border-red-200 px-2 py-0.5 rounded-md">${item.spicyLabel}</span>` : ''}
+                                        <span class="font-bold text-amber-700 text-sm whitespace-nowrap">${item.price}</span>
+                                    </div>
                                 </div>
                                 <h4 class="font-bold text-stone-900 text-base group-hover:text-amber-800 transition-colors mt-2 mb-1">${item.name}</h4>
                                 <p class="text-stone-600 text-xs line-clamp-3 leading-relaxed">${item.desc}</p>
@@ -768,7 +770,10 @@
             const modalContent = document.getElementById('modalContent');
             modalContent.innerHTML = `
                 <div class="mb-4">
-                    <span class="text-xs font-bold text-amber-800 bg-amber-100 px-2.5 py-1 rounded-lg border border-amber-200">${foundItem.id}</span>
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs font-bold text-amber-800 bg-amber-100 px-2.5 py-1 rounded-lg border border-amber-200">${foundItem.id}</span>
+                        ${foundItem.spicyLabel ? `<span class="text-xs font-bold text-red-600 bg-red-50 border border-red-200 px-2.5 py-1 rounded-lg">${foundItem.spicyLabel}</span>` : ''}
+                    </div>
                     <h3 class="text-2xl font-serif font-bold text-stone-900 mt-2">${foundItem.name}</h3>
                     <p class="text-amber-700 font-bold text-xl mt-1">${foundItem.price}</p>
                 </div>
@@ -776,7 +781,7 @@
                     <p class="text-stone-700 text-sm leading-relaxed">${foundItem.desc}</p>
                 </div>
                 <div class="flex items-center justify-between pt-2">
-                    <span class="text-xs text-stone-500 font-medium">${foundItem.spicy ? '🌶️ Spicy Dish' : 'Freshly Prepared'}</span>
+                    <span class="text-xs text-stone-500 font-medium">${foundItem.spicy ? foundItem.spicyLabel : 'Freshly Prepared'}</span>
                     <a href="tel:+19184209399" class="bg-amber-600 hover:bg-amber-500 text-white font-bold px-4 py-2 rounded-xl text-xs transition-colors flex items-center gap-1.5 shadow-md">
                         <i data-lucide="phone" class="w-3.5 h-3.5"></i>
                         <span>Order Now</span>
